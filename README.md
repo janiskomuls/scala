@@ -1,4 +1,4 @@
 scala
 =====
 
-Scala workshops, examples, tasks, samples
+Scala workshops, examples, tasks, samples, scalatest + BDD
