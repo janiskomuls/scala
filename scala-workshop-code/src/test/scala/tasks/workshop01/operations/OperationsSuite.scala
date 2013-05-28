@@ -1,4 +1,4 @@
-package workshop01.tasks.operations
+package tasks.workshop01.operations
 
 import org.scalatest.FunSuite
 import org.junit.runner.RunWith

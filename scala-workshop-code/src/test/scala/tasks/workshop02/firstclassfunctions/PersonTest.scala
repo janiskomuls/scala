@@ -1,4 +1,4 @@
-package workshop02.tasks.firstclassfunctions
+package tasks.workshop02.firstclassfunctions
 
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner

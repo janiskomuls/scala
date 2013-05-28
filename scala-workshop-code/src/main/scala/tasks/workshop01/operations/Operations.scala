@@ -1,4 +1,4 @@
-package workshop01.tasks.operations
+package tasks.workshop01.operations
 
 // You are not permitted to use these List methods:
 // * length

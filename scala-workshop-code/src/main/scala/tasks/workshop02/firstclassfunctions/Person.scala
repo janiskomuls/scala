@@ -1,4 +1,4 @@
-package workshop02.tasks.firstclassfunctions
+package tasks.workshop02.firstclassfunctions
 
 case class Person(name: String, age: Int, emailAddresses: List[EmailAddress])
 
