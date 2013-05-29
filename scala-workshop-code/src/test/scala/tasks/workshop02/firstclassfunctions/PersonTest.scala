@@ -8,7 +8,7 @@ import junit.framework.Assert._
 import org.scalatest.FunSuite
 import org.scalatest.matchers.ShouldMatchers
 
-// Make test below run and pass
+// Make tests below run and pass
 
 // The objective in each exercise is to 
 // transform the list 'persons' in some way,
