@@ -1,14 +1,14 @@
 Scala 2.10 workshop
+=====
+
+<h4>Description:</h4>
+Scala workshop, basics, examples, samples, tasks, scalatest + BDD
 
 =====
 
-Description: Scala workshop, basics, examples, samples, tasks, scalatest + BDD
+<h4>Contents:</h4>
 
-=====
-
-Contents:
-
-1) scala-workshop-code - contains workshops code
+<b>1)</b> scala-workshop-code - contains workshops code
 
 Tasks based on Fredrik Vraalsen and Alf Kristian Støyle tasks
 
@@ -21,7 +21,7 @@ Original: https://github.com/javaBin/scala-training-code
 
 =====
 
-2) scala-workshop-slides - contains workshops presentations
+<b>2)</b> scala-workshop-slides - contains workshops presentations
 
 Presentations based on Fredrik Vraalsen and Alf Kristian Støyle presentations
 
