@@ -2,28 +2,37 @@
 * Scala 2.10 workshop
 =====
 
-* Contents: Scala workshops, examples, tasks, samples, scalatest + BDD
+Contents:
+* Scala workshop
+* basics
+* examples
+* samples
+* tasks
+* scalatest + BDD
 
 =====
 
-* scala-workshop-code - contains workshops code
+scala-workshop-code - contains workshops code
 
-** Tasks based on Fredrik Vraalsen and Alf Kristian Støyle tasks
+Tasks based on Fredrik Vraalsen and Alf Kristian StÃ¸yle tasks
 
-*** Tasks adopted for scala 2.10
-*** Have additions
-*** Have scalatest tests instead of simple JUnit tests
+Additions:
+* Tasks adopted for scala 2.10
+* New tasks
+* Mostly have scalatest tests instead of simple JUnit tests
 
-** Original: https://github.com/javaBin/scala-training-code
+Original: https://github.com/javaBin/scala-training-code
 
 =====
 
-* scala-workshop-slides - contains workshops presentations
+scala-workshop-slides - contains workshops presentations
 
-** Presentations based on Fredrik Vraalsen and Alf Kristian Støyle presentations
+Presentations based on Fredrik Vraalsen and Alf Kristian StÃ¸yle presentations
 
-*** Have additions and color improvements
+Additions:
+* Content changes
+* Style and color improvements
 
-** Original: https://github.com/javaBin/scala-training-slides
+Original: https://github.com/javaBin/scala-training-slides
 
 =====
