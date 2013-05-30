@@ -135,7 +135,7 @@ class PersonTest extends FunSuite with ShouldMatchers {
   test("testNameToEmailAddress") {
     // Create a map from each persons name to their e-mail addresses,
     // filtering out persons without e-mail addresses
-    // Hint: First filter list, then use foldLeft to accumulate...
+    // Hint: First filter list, then use map and toMap ...
     val emptyMap: Map[String, List[EmailAddress]] = Map()
 
     // Insert code here for emptyMap
