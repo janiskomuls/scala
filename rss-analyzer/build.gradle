@@ -1,0 +1,39 @@
+apply from: "./libraries.gradle"
+
+apply plugin: 'scala'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+
+ext {
+	scalaVersion = '2.10.2'
+}
+
+version = '1.0'
+
+targetCompatibility = 1.6
+sourceCompatibility = 1.6
+tasks.withType(Compile) { options.encoding = 'UTF-8' }
+
+repositories {
+	maven {
+		name "public4finance"
+		url "http://repo.4finance.net/nexus/content/repositories/public/"
+	}
+
+	mavenLocal()
+	mavenCentral()
+}
+
+dependencies {
+	compile lib.scalatra 
+	compile lib.jackson
+	compile lib.json4s
+	compile lib.liftweb
+	compile lib.rome
+	compile lib.akka
+	compile lib.activemq
+	testCompile lib.jetty
+	testCompile lib.junit
+}
+
+task wrapper(type: Wrapper) { gradleVersion = '1.6' }

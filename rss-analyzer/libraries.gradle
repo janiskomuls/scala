@@ -1,0 +1,30 @@
+ext {
+
+	scalatraVersion = "2.2.1"
+	jettyVersion = "8.1.11.v20130520"
+	json4sVersion = "3.2.4"
+	jacksonVersion = "1.9.12"
+	liftwebVersion = "2.5.1"
+	romeVersion = "0.9"
+	akkaVersion = "2.2.0"
+	activemqVersion = "5.8.0"
+	
+	lib = [
+		junit: "junit:junit:4.+",
+		json4s: "org.json4s:json4s-native_2.10:${json4sVersion}", 
+		liftweb: "net.liftweb:lift-json_2.10:${liftwebVersion}",
+		jackson: "org.codehaus.jackson:jackson-mapper-asl:${jacksonVersion}",
+		rome: "rome:rome:${romeVersion}",
+		activemq : "org.apache.activemq:activemq-camel:${activemqVersion}",
+		akka: "com.typesafe.akka:akka-camel_2.10:${akkaVersion}",
+		scalatra: [
+			"org.scalatra:scalatra_2.10:${scalatraVersion}",
+			"org.scalatra:scalatra-scalate_2.10:${scalatraVersion}",
+			"org.scalatra:scalatra-swagger_2.10:${scalatraVersion}"
+		],
+		jetty: [
+			"org.eclipse.jetty:jetty-server:${jettyVersion}",
+			"org.eclipse.jetty:jetty-webapp:${jettyVersion}"
+		]
+	]
+}
