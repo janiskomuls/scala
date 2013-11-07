@@ -15,11 +15,6 @@ sourceCompatibility = 1.6
 tasks.withType(Compile) { options.encoding = 'UTF-8' }
 
 repositories {
-	maven {
-		name "public4finance"
-		url "http://repo.4finance.net/nexus/content/repositories/public/"
-	}
-
 	mavenLocal()
 	mavenCentral()
 }
