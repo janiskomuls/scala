@@ -9,11 +9,11 @@ object Futures extends App {
 
   println(s"program started on thread [$threadId]")
   println("before future")
-  val future = Future {
-    computationWhichMayFail("future 1", 500 milliseconds, willFailAnyWay = false)
+  val future = retryableFuture(times = 3) {
+    Future(computationWhichMayFail("future 1", 500 milliseconds, willFailAnyWay = true))
   } fallbackTo {
-    // will compute future anyway (will start to compute even before future 1)
-    Future(computationWhichMayFail("future 2", 300 milliseconds, willFailAnyWay = false))
+    // will compute future in parallel with future 1 (will start to compute even before future 1)
+    Future(computationWhichMayFail("future 2", 300 milliseconds, willFailAnyWay = true))
   } recoverWith {
     // will compute only if both futures will fail
     case e => Future(computationWhichMayFail("future 3", 100 milliseconds, willFailAnyWay = false))
@@ -40,6 +40,14 @@ object Futures extends App {
     } else {
       println(s"computation end: $name")
       name
+    }
+  }
+
+  // : => call by name!
+  def retryableFuture[T](times: Int)(cmd: => Future[T]): Future[T] = {
+    if (times <= 1) cmd
+    else cmd recoverWith {
+      case e => retryableFuture(times - 1)(cmd)
     }
   }
 }
